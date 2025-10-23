@@ -1,58 +1,47 @@
-# ..-
-... 
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #F7E1F9; /* Light, soft background */
-    color: #333;
-    margin: 0;
-    text-align: center;
-    padding: 20px;
+/* --- ANIMATION CODE --- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-header {
-    background-color: #FFC0CB; /* Pink header */
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+main section {
+    opacity: 0; /* Starts hidden */
+    animation: fadeIn 1.5s ease-out 0.5s forwards;
 }
 
-h1 {
-    color: #800080; /* Deep purple text */
-    font-size: 3em;
-    margin-top: 0;
+.favorite-things {
+    animation-delay: 1.5s; /* Delays this section */
 }
 
-main {
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+.photo-placeholder {
+    animation-delay: 2.5s; /* Delays this section even more */
+}/* --- ANIMATION CODE --- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.tribute-message, .favorite-things, .photo-placeholder {
-    margin-bottom: 30px;
-    padding: 15px;
-    border-left: 5px solid #FF69B4; /* Hot pink accent line */
-    text-align: left;
+main section {
+    opacity: 0; /* Starts hidden */
+    animation: fadeIn 1.5s ease-out 0.5s forwards;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    border: 5px solid #FFC0CB;
+.favorite-things {
+    animation-delay: 1.5s; /* Delays this section */
 }
 
-ul {
-    list-style-type: '💖 '; /* Cute list marker */
-    padding-left: 20px;
+.photo-placeholder {
+    animation-delay: 2.5s; /* Delays this section even more */
 }
-
-footer {
-    margin-top: 30px;
-    color: #800080;
-    font-weight: bold;
-  }
